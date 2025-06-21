@@ -5,7 +5,6 @@ import { RecentTransactions } from "@/components/finance/RecentTransactions";
 import { SpendingChart } from "@/components/finance/SpendingChart";
 import { BudgetProgress } from "@/components/finance/BudgetProgress";
 import { Card } from "@/components/ui/card";
-import Image from "next/image";
 
 const Index = () => {
   return (
@@ -13,12 +12,10 @@ const Index = () => {
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
         <h1 className="text-3xl font-bold">Personal Finance Dashboard</h1>
         <div className="w-full md:w-64">
-          <Image
+          <img
             src="/images/Trip-pana.png"
             alt="Financial planning illustration"
-            width={256}
-            height={256}
-            className="object-contain"
+            className="object-contain w-full h-auto"
           />
         </div>
       </div>
